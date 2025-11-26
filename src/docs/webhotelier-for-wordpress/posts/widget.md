@@ -25,5 +25,4 @@ Best practice
 
 Image example (remote):
 
-![Widget example](https://wplugged.com/wp-content/uploads/2019/09/Widget-form-full.png)
-
+![Widget example](/img/docs/Widget-form-full.png)

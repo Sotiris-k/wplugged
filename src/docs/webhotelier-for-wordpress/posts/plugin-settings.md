@@ -12,6 +12,8 @@ eleventyNavigation:
 After activation, the plugin adds a **WebHotelier Options** admin menu where
 you set plugin defaults used by shortcodes, widgets and blocks.
 
+![WebHotelier Options Menu](/img/docs/WebHotelierOptionsMenu.png)
+
 There are two main tabs in the options:
 
 1. **Form Fields Settings** – set defaults for:
@@ -20,6 +22,10 @@ There are two main tabs in the options:
 	 - `Default Nights`, `Default Rooms`, `Default Adults`, `Default Children`, `Default Infants`
 	 - `Days from today that Check-in is allowed`
 	 - `Opening and Closing Dates` (supports `from` / `to` date ranges)
+
+   **Note:** If your hotel closes in the next year, select the closing date accordingly:
+
+   ![Different year opening closing dates](/img/docs/Opening-closing-dates-on-different-years.png)
 
 2. **Form Customization Settings** – layout and appearance options:
 	 - `Orientation` (horizontal, vertical, fluid)
@@ -31,8 +37,8 @@ There are two main tabs in the options:
 
 Examples and screenshots (remote):
 
-![Form Fields Settings](https://wplugged.com/wp-content/uploads/2019/09/Web-hotelier-options-Form-Fields-Settings.png)
-![Form Customization Settings](https://wplugged.com/wp-content/uploads/2019/07/Web-hotelier-options-Form-Customization-Settings.png)
+![Form Fields Settings](/img/docs/Web-hotelier-options-Form-Fields-Settings.png)
+![Form Customization Settings](/img/docs/Web-hotelier-options-Form-Customization-Settings.png)
 
 Notes
 
@@ -41,4 +47,3 @@ Notes
 	field is hidden from the form.
 - Opening/closing dates should be set with care; if the closing date is in the
 	next year, set the year accordingly.
-

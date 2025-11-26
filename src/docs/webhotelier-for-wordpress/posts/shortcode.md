@@ -107,4 +107,3 @@ Notes
   **WebHotelier Options** in the admin.
 - The plugin automatically handles date ranges and will adjust years when
   necessary for `opening-closing-dates`.
-

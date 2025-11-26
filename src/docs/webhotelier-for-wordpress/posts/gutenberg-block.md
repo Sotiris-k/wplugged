@@ -18,4 +18,3 @@ block sidebar are applied live in the editor.
 
 This provides a convenient, visual way to place forms inside posts and pages
 without using shortcodes.
-

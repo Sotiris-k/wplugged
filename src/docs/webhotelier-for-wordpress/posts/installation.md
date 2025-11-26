@@ -12,7 +12,13 @@ eleventyNavigation:
 The easiest way to install the plugin is:
 
 1. Go to **Plugins → Add New** in your WordPress admin.
+
+   ![Plugins Add New](/img/docs/Plugins-Add-New.png)
+
 2. Search for **"WebHotelier for WordPress"** and press **Install Now**.
+
+   ![Search WebHotelier for WordPress](/img/docs/Search-Web-Hotelier-for-Wordpress.png)
+
 3. Activate the plugin via the **Plugins** page.
 4. After activation you'll see a new admin menu called **WebHotelier Options**.
 
@@ -22,4 +28,3 @@ If you cannot install from the repository, install manually:
 2. Upload the `webhotelier` folder into your site's `/wp-content/plugins/` directory.
 3. Activate the plugin in **Plugins** → **Installed Plugins**.
 4. You should see the **WebHotelier Options** admin menu to configure defaults.
-
