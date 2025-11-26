@@ -1,6 +1,6 @@
 ---
 title: "Changelog"
-layout: "layouts/post.html"
+layout: "layouts/simple.html"
 ---
 
 ## 1.10.0
