@@ -18,8 +18,4 @@ overview:
     title: "WebHotelier for WordPress"
     url: "/docs/webhotelier-for-wordpress/"
     description: "Complete documentation for the WebHotelier WordPress plugin."
--
-    title: "Viva Payments for WordPress"
-    url: "/docs/viva-payments-for-wordpress/"
-    description: "Documentation coming soon."
 ---
