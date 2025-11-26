@@ -1,5 +1,5 @@
 ---
-title: "WPlugged WordPress Plugins Documentation"
+title: "WebHotelier for WordPress"
 headline: "WPlugged.com"
 btns:
 -
@@ -7,10 +7,10 @@ btns:
     url: "/docs/webhotelier-for-wordpress/"
     type: "regular"
 -
-    caption: "WordPress Plugin"
+    caption: "Download WebHotelier for WordPress Plugin"
     url: "https://wordpress.org/plugins/webhotelier/"
     type: "outline"
-summary: "Documentation and resources for WPlugged WordPress plugins."
+summary: "Documentation and resources for the WebHotelier for WordPress Plugin."
 displaySummary: true
 layout: "layouts/front-page.html"
 overview:

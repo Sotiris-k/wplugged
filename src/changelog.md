@@ -38,7 +38,7 @@ layout: "layouts/simple.html"
 
 ## 1.7.6
 - Updates codestart framework to v2.2.9
-- Tested up to wordpress 6.1.1
+- Tested up to WordPress 6.1.1
 
 ## 1.7.5
 - Adds a title attribute to flatpickr inputs for accessibility tools to not display related errors

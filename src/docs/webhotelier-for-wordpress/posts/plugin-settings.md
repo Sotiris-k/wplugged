@@ -35,9 +35,7 @@ There are two main tabs in the options:
 	 - `Custom CSS Class` (add classes applied to the form element)
 	 - `Custom CSS` (code editor textarea to insert CSS rules)
 
-Examples and screenshots (remote):
-
-![Form Fields Settings](/img/docs/Web-hotelier-options-Form-Fields-Settings.png)
+![Form Fields Settings](/img/docs/Web-hotelier-options-Form-Fields-Settings.jpg)
 ![Form Customization Settings](/img/docs/Web-hotelier-options-Form-Customization-Settings.png)
 
 Notes

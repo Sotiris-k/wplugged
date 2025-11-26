@@ -11,7 +11,7 @@ eleventyNavigation:
 ## Installation
 The easiest way to install the plugin is:
 
-1. Go to **Plugins → Add New** in your WordPress admin.
+1. Go to **Plugins → Add Plugin** in your WordPress admin.
 
    ![Plugins Add New](/img/docs/Plugins-Add-New.png)
 

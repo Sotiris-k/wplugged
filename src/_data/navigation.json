@@ -1,52 +1,12 @@
 {
   "header": [
     {
-      "caption": "WebHotelier",
-      "url": "/docs/webhotelier-for-wordpress/",
-      "external": false
-    },
-    {
       "caption": "Changelog",
       "url": "/changelog/",
       "external": false
     }
   ],
   "footer": [
-    {
-      "title": "WebHotelier for WordPress",
-      "items": [
-        {
-          "caption": "Overview",
-          "url": "/docs/webhotelier-for-wordpress/",
-          "external": false
-        },
-        {
-          "caption": "Installation",
-          "url": "/docs/webhotelier-for-wordpress/installation/",
-          "external": false
-        },
-        {
-          "caption": "Shortcode",
-          "url": "/docs/webhotelier-for-wordpress/shortcode/",
-          "external": false
-        },
-        {
-          "caption": "Widget",
-          "url": "/docs/webhotelier-for-wordpress/widget/",
-          "external": false
-        },
-        {
-          "caption": "Plugin Settings",
-          "url": "/docs/webhotelier-for-wordpress/plugin-settings/",
-          "external": false
-        },
-        {
-          "caption": "Gutenberg Block",
-          "url": "/docs/webhotelier-for-wordpress/gutenberg-block/",
-          "external": false
-        }
-      ]
-    },
     {
       "title": "Support",
       "items": [

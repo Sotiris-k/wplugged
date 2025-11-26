@@ -23,6 +23,4 @@ Best practice
 - The widget supports all shortcode attributes so you can customize behaviour
 	per-instance.
 
-Image example (remote):
-
 ![Widget example](/img/docs/Widget-form-full.png)
