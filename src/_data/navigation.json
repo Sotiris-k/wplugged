@@ -6,8 +6,8 @@
       "external": false
     },
     {
-      "caption": "Contact",
-      "url": "/contact-us/",
+      "caption": "Changelog",
+      "url": "/changelog/",
       "external": false
     }
   ],
@@ -51,8 +51,8 @@
       "title": "Support",
       "items": [
         {
-          "caption": "Contact Us",
-          "url": "/contact-us/",
+          "caption": "Email Support",
+          "url": "mailto:support@wplugged.com",
           "external": false
         }
       ]
