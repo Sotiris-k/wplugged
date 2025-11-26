@@ -1,13 +1,13 @@
 {
-  "authorEmail": "hello@conedevelopment.com",
-  "authorName": "Cone",
-  "copyright": "Some rights reserved.",
-  "name": "Spruce CSS Eleventy Documentation Template",
-  "slogen": "An Eleventy theme for documentation sites",
+  "authorEmail": "info@wplugged.com",
+  "authorName": "WPlugged",
+  "copyright": "© 2025 WPlugged.com WordPress Plugins",
+  "name": "WPlugged Documentation",
+  "slogen": "WordPress Plugins Documentation",
   "social": {
-    "twitter": "https://twitter.com/conedevelopment",
-    "github": "https://github.com/conedevelopment/sprucecss-eleventy-documentation-template",
+    "twitter": "",
+    "github": "https://github.com/Sotiris-k/wplugged",
     "discord": ""
   },
-  "url": "https://eleventy-documentation.sprucecss.com"
+  "url": "https://wplugged.com"
 }
