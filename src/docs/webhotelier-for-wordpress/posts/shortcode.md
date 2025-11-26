@@ -1,7 +1,11 @@
 ---
 title: "Shortcode"
-layout: post
+layout: "layouts/post.html"
 permalink: /docs/webhotelier-for-wordpress/shortcode/
+eleventyNavigation:
+  key: Shortcode
+  parent: WebHotelier for WordPress
+  order: 3
 ---
 
 ## Shortcode

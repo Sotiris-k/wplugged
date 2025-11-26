@@ -1,7 +1,11 @@
 ---
 title: "Installation"
-layout: post
+layout: "layouts/post.html"
 permalink: /docs/webhotelier-for-wordpress/installation/
+eleventyNavigation:
+  key: Installation
+  parent: WebHotelier for WordPress
+  order: 2
 ---
 
 ## Installation

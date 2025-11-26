@@ -1,7 +1,11 @@
 ---
-title: "WebHotelier for WordPress"
-layout: post
+title: "Overview"
+layout: "layouts/post.html"
 permalink: /docs/webhotelier-for-wordpress/
+eleventyNavigation:
+  key: Overview
+  parent: WebHotelier for WordPress
+  order: 1
 ---
 
 ## WebHotelier for WordPress

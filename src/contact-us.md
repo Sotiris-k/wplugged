@@ -1,6 +1,6 @@
 ---
 title: "Contact Us"
-layout: post
+layout: "layouts/base.html"
 permalink: /contact-us/
 ---
 

@@ -1,7 +1,11 @@
 ---
 title: "Gutenberg Block"
-layout: post
+layout: "layouts/post.html"
 permalink: /docs/webhotelier-for-wordpress/gutenberg-block/
+eleventyNavigation:
+  key: Gutenberg Block
+  parent: WebHotelier for WordPress
+  order: 6
 ---
 
 ## Gutenberg Block

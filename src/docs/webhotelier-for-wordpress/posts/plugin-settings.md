@@ -1,7 +1,11 @@
 ---
 title: "Plugin Settings"
-layout: post
+layout: "layouts/post.html"
 permalink: /docs/webhotelier-for-wordpress/plugin-settings/
+eleventyNavigation:
+  key: Plugin Settings
+  parent: WebHotelier for WordPress
+  order: 5
 ---
 
 ## Plugin Settings

@@ -1,7 +1,11 @@
 ---
 title: "Widget"
-layout: post
+layout: "layouts/post.html"
 permalink: /docs/webhotelier-for-wordpress/widget/
+eleventyNavigation:
+  key: Widget
+  parent: WebHotelier for WordPress
+  order: 4
 ---
 
 ## Widget
