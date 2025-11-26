@@ -18,7 +18,10 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --ignore-scripts
+      
+      - name: Install sharp for platform
+        run: npm install --platform=linux --arch=x64 sharp
 
       - name: Build production site
         run: npm run prod
