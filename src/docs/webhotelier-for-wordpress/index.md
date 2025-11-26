@@ -5,7 +5,21 @@ permalink: /docs/webhotelier-for-wordpress/
 ---
 
 ## WebHotelier for WordPress
+This WordPress Plugin is a form generator/manager designed to help WebHotelier clients
+create and manage availability/search forms that connect to their WebHotelier account.
 
-This page will host the main documentation and overview for the WebHotelier plugin for WordPress. Content will be migrated from the old site and converted to Markdown.
+WebHotelier is a booking engine used by many hotels to present availability and
+manage bookings. This documentation explains how to install and use the
+WebHotelier for WordPress plugin, including shortcode usage, the widget, plugin
+settings and the Gutenberg block.
 
-TODO: migrate content from the old site (`oldsite/`) into this page.
+Articles
+
+- [Installation](/docs/webhotelier-for-wordpress/installation/)
+- [Shortcode](/docs/webhotelier-for-wordpress/shortcode/)
+- [Widget](/docs/webhotelier-for-wordpress/widget/)
+- [Plugin Settings](/docs/webhotelier-for-wordpress/plugin-settings/)
+- [Gutenberg Block](/docs/webhotelier-for-wordpress/gutenberg-block/)
+
+If you need help or can't find what you're looking for, please visit [Contact
+Us](/contact-us/).

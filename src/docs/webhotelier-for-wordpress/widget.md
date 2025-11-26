@@ -5,7 +5,21 @@ permalink: /docs/webhotelier-for-wordpress/widget/
 ---
 
 ## Widget
+You can add the WebHotelier Availability Form as a widget via **Appearance →
+Widgets** in WordPress.
 
-Widget configuration and examples for WebHotelier.
+Select **WebHotelier Booking Form** from the available widgets and place it in
+any widget area (sidebar, footer, etc.). Each widget instance supports the
+same options available to the shortcode (URL, max rooms, max adults, nights,
+orientation, custom CSS class, etc.) and optionally a title.
 
-TODO: migrate widget instructions and screenshots if available.
+Best practice
+
+- Use `vertical` orientation for sidebars and narrow containers.
+- The widget supports all shortcode attributes so you can customize behaviour
+	per-instance.
+
+Image example (remote):
+
+![Widget example](https://wplugged.com/wp-content/uploads/2019/09/Widget-form-full.png)
+
