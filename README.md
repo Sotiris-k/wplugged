@@ -5,129 +5,54 @@
             <source media="(prefers-color-scheme: light)" srcset="./.github/spruce-logo-dark.svg">
             <source media="(prefers-color-scheme: dark)" srcset="./.github/spruce-logo-light.svg">
             <img alt="Spruce CSS" width="140" src="./.github/spruce-logo-dark.svg">
-        </picture>
-        <br>
-    </a>
-</p>
+        # Wplugged Documentation
 
-**Welcome to the official documentation of **Spruce Docs** Elventy theme. A small template you can use to document any of your projects.**
+        This repository hosts the documentation site for wplugged.com. It's based on the Spruce Docs Eleventy template and contains the Eleventy source files, styles and build scripts.
 
-<br>
+        This repo is configured to automatically build and deploy to GitHub Pages (using GitHub Actions). A custom domain `wplugged.com` is set during the deployment step.
 
-![The preview image of the theme.](./.github/spruce-docs-preview-mockup-2.png)
+        Quick links
 
+        - Site: https://wplugged.com
+        - Repo: https://github.com/Sotiris-k/wplugged
 
-[![Github release](https://img.shields.io/github/v/release/conedevelopment/sprucecss-eleventy-documentation-template?color=2350f6&logo=github&logoColor=white&style=for-the-badge)](https://github.com/conedevelopment/sprucecss-eleventy-documentation-template/releases/latest)
-[![License](https://img.shields.io/badge/license-MIT-2350f6?style=for-the-badge)](https://github.com/conedevelopment/sprucecss-eleventy-documentation-template/blob/main/LICENSE)
+        Prerequisites
 
-A documentation template is always helpful. There are a lot of solutions to make one; we wanted to create our self-hosted version based on our favorite static site generator [Eleventy](https://www.11ty.dev/).
+        - Node.js 18+ and npm
 
-By structure, it is simple, with two levels and additional custom templates like [FAQ]([/faq/](https://eleventy-documentation.sprucecss.com/faq/)) and [Changelog]([/changelog/](https://eleventy-documentation.sprucecss.com/changelog/)).
+        Local development
 
-## Spruce CSS
+        1. Install dependencies:
 
-The template is built on [Spruce CSS](https://sprucecss.com/), a small and customizable CSS framework. The main benefit of this is that you can use the Spruce UI components with dark mode and RTL support.
+        ```bash
+        npm ci
+        ```
 
-## Features
+        2. Start the dev server (Eleventy + Sass watcher):
 
-- Breadcrumb navigation built on [11ty Navigation Plugin](https://www.11ty.dev/docs/plugins/navigation/).
-- HTML minification in production mode.
-- Anchor headings.
-- Table of Content.
-- FAQ template.
-- Changelog template.
-- Static search integration with [pagefind](https://pagefind.app/).
-- Code highlighting.
-- RTL support.
-- Dark theme mode.
-- [svgIcon](https://github.com/conedevelopment/sprucecss-eleventy-documentation-template/blob/main/src/shortcodes/svg-icon.js) shortcode: render any SVG icon inline and add optional classes.
-- [markdownRenderer](https://github.com/conedevelopment/sprucecss-eleventy-documentation-template/blob/main/src/shortcodes/markdown-render.js): render any string (markdown) into HTML.
+        ```bash
+        npm start
+        ```
 
-## Setup
+        3. Build production output (the workflow publishes the `dist` folder):
 
-1. **Clone the repository.**
+        ```bash
+        npm run prod
+        ```
 
-2. **Install the dependencies.**
+        Deployment
 
-    In the `package.json` file, you will find all of the dependencies (and scripts) to install them using the following command:
+        - A GitHub Action (`.github/workflows/deploy.yml`) builds the site on `main` and deploys the `dist` folder to GitHub Pages. The workflow writes a `CNAME` file with `wplugged.com` into `dist` before deployment so Pages serves the custom domain.
+        - After push, go to the repository Settings → Pages to confirm the Pages configuration and the custom domain.
 
-    ```shell
-    npm install
-    ```
+        DNS notes
 
-3. **Run the development mode**
+        - To use `wplugged.com` with GitHub Pages, configure your DNS provider:
+          - Add an A record for the apex (wplugged.com) pointing to GitHub Pages IPs, or use an ALIAS/ANAME if your provider supports it.
+          - Add a CNAME record for `www` pointing to `<username>.github.io` or configure the apex as above.
 
-    To run the development mode, use the `npm script`.   This script will also watch for changes.
+        If you'd like, I can add a short `CNAME` file to the repo root (not strictly required because the workflow writes one to `dist`).
 
-    ```shell
-    npm start
-    ```
+        More
 
-4. **Run the production mode**
-
-    Before you go live, you should use the production script to compress the Sass files.
-
-    ```shell
-    npm run prod
-    ```
-
-You can find some more npm scripts in the [package.json](https://github.com/conedevelopment/sprucecss-eleventy-documentation-template/blob/main/package.json) that can be helpful.
-
-## Content Managment
-
-Adding content to the template is easy as almost everything is in Eleventy.
-
-### The Basic Structure
-
-Our base folder for the documentation pages is the `posts` folder. You must follow the folder structure, which means the `category` here. If you create a folder, you must make a list page with the same name as the folder. You must also create another `posts` folder under the `category` folder where your posts go. You must create the `posts.json` file that will parameter your `layout` and `permalink` values.
-
-### Eleventy Navigation
-
-The theme utilizes the [Eleventy Navigation plugin](https://www.11ty.dev/docs/plugins/navigation/), so you must explicitly set up the hierarchy. This is needed for the automatic sidebar navigation, the navigation order, and breadcrumb generation.
-
-### Other Pages
-
-To create simple pages, make a file directly under the `src` folder and configure it with the available front matter.
-
-## Structure
-
-```html
-spruecss-eleventy-documentation-template/
-├─ node_modules/
-├─ dist/
-├─ src/
-│  ├─ _data/
-│  ├─ _includes/
-│  ├─ css/
-│  ├─ filters/
-│  ├─ font/
-│  ├─ img/
-│  ├─ js/
-│  ├─ posts/
-│  ├─ scss/
-│  ├─ shortcodes/
-│  ├─ transforms/
-│  ├─ changelog.md
-│  ├─ faq.md
-│  ├─ index.md
-├─ .eleventy.js
-├─ package.json
-├─ README.md
-├─ ...
-
-```
-
-- **_data**: Some global data, like the name of your site and helpers like the active navigation element or current year.
-- **__includes**: All of the layout and partial templates.
-- **css**: The compiled CSS.
-- **filters**: The additional filters that you can use.
-- **font**: The custom fonts.
-- **img**: The static image files.
-- **posts**: The markdown contents.
-- **scss**: The Sass files.
-- **shortcodes**: The available shortcodes.
-- **transforms**: The transformations.
-
-<br>
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b7560c95-7035-491b-8c3f-94c43bea761e/deploy-status)](https://app.netlify.com/sites/sprucecss-eleventy-documentation/deploys)
+        The site uses Eleventy and Spruce CSS. The relevant scripts are in `package.json`.
