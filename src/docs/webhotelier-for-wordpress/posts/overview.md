@@ -24,6 +24,3 @@ Articles
 - [Widget](/docs/webhotelier-for-wordpress/widget/)
 - [Plugin Settings](/docs/webhotelier-for-wordpress/plugin-settings/)
 - [Gutenberg Block](/docs/webhotelier-for-wordpress/gutenberg-block/)
-
-If you need help or can't find what you're looking for, please visit [Contact
-Us](/contact-us/).

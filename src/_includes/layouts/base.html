@@ -9,6 +9,15 @@
         <link rel="alternate"  type="application/rss+xml"  href="{{ site.url }}/feed.xml" />
         {% include "partials/meta.html" %}
         <link rel="stylesheet" href="/css/main.css" />
+        
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-J1RK73QLY0"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-J1RK73QLY0');
+        </script>
     </head>
     <body>
         <div class="site-wrapper">
@@ -24,7 +33,7 @@
                 </div>
             </div>
         </div>
-        {% include "partials/search-modal.html" %}
+        {# {% include "partials/search-modal.html" %} #}
 
         <script src="/js/theme-change-assets.js" defer></script>
         <script src="/js/navigation.js" defer></script>

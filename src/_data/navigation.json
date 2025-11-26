@@ -51,8 +51,8 @@
       "title": "Support",
       "items": [
         {
-          "caption": "Email Support",
-          "url": "mailto:support@wplugged.com",
+          "caption": "support [at] wplugged.com",
+          "url": "",
           "external": false
         }
       ]
