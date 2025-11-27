@@ -5,29 +5,42 @@
             <h3 class="footer__title" id="footer-title-{{ block.title | slugify }}">
                 {{ block.title }}
             </h3>
-            <ul
-                class="footer__navigation"
-                aria-labelledby="footer-title-{{ block.title | slugify }}"
-            >
-                {% for item in block.items %}
-                <li>
-                    <a
-                        href="{{ item.url }}"
-                        {{ helpers.getLinkActiveState(item.url, page.url) | safe }}
-                        {% if item.external %}
-                            target="_blank"
-                            rel="noopener"
-                        {% endif %}
-                    >
-                        {{ item.caption }}
-                        {% if item.external %}
-                            <span class="sr-only">Open in new window</span>
-                            {% svgIcon './src/img/icon/arrow-outward.svg', 'btn__icon' %}
-                        {% endif %}
-                    </a>
-                </li>
-                {% endfor %}
-            </ul>
+            {% if block.title == "Copyright" %}
+                <p>© {{ global.year() }} - {{ site.copyright }}</p>
+            {% else %}
+                <ul
+                    class="footer__navigation"
+                    aria-labelledby="footer-title-{{ block.title | slugify }}"
+                >
+                    {% for item in block.items %}
+                    <li>
+                        <a
+                            href="{{ item.url }}"
+                            {{ helpers.getLinkActiveState(item.url, page.url) | safe }}
+                            {% if item.external %}
+                                target="_blank"
+                                rel="noopener"
+                            {% endif %}
+                        >
+                            {{ item.caption }}
+                            {% if item.external %}
+                                <span class="sr-only">Open in new window</span>
+                                {% svgIcon './src/img/icon/arrow-outward.svg', 'btn__icon' %}
+                            {% endif %}
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% if block.title == "Support" %}
+                <div class="donation-wrapper" style="margin-top: 1.5rem;">
+                    <div class="donation-message" style="margin-bottom: 1rem; font-size: 0.9rem;">
+                        We hope this plugin helps you incorporate <a href="https://www.webhotelier.net/" target="_blank" rel="noopener">WebHotelier's</a> powerful platform to your WordPress website. <br> A small donation will help us keep bringing you updates and more exciting features.
+                    </div>
+                    <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
+                    <script type='text/javascript'>kofiwidget2.init('Buy us a coffee?', '#60a5c8', 'wplugged');kofiwidget2.draw();</script> 
+                </div>
+                {% endif %}
+            {% endif %}
         </div>
         {% endfor %}
     </div>
